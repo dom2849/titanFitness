@@ -43,7 +43,7 @@ a{
     }
     
     .button--dark-green:hover{
-        transform: scale(1.1);
+        transform: scale(1.12);
         background: var(--light-green);
         color: #fff;
     }
@@ -57,6 +57,9 @@ a{
     margin: auto;
 }
 
+.hilight{
+    color: var(--light-green);
+}
 .hero{
     box-sizing: border-box;
     height: 80vh;
@@ -191,6 +194,17 @@ a{
 .membership__card-offerings > *:last-child{
     border-bottom: none;
     margin-bottom: 1.3rem;
+}
+
+.main-footer{
+    background: #333;
+    color: #fff;
+}
+
+.main-footer__contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
