@@ -1,0 +1,46 @@
+:root{
+    --hamburger-menu-display: inline-block;
+}
+
+.hamburger-menu{
+    z-index: 1;
+}
+
+.main-navigation{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(46, 49, 49, .9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scale(0);  /* Hides the menu */
+}
+
+.enable{
+    animation: grow 1s forwards;
+}
+
+
+@keyframes grow{
+    to{
+        transform: scale(1.5);
+    }
+}
+
+.disable{
+    transform: scale(1.5); /* Scales the menu back to the final scaling of the grow animation.
+                            This is needed because when the enable class is removed, the 
+                            main navigation menu will dissappear without any animation */
+                            
+    animation: shrink .8s forwards;
+}
+
+@keyframes shrink{
+    to{
+        transform: scale(0);
+    }
+}
+
