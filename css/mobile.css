@@ -4,6 +4,8 @@
     --margin-top: -2rem;
 }
 
+/* HOME PAGE */
+
 .benefit__cards{
      --number-of-columns: 1fr;
 }
@@ -18,6 +20,14 @@
     max-width: 450px;
     margin: auto;
 }
+
+
+
+/* CLASSES PAGE */
+.group-fitness__courses{
+    --number-of-columns: 1fr;
+}
+
 
 .main-footer__contents{
     --flex-direction: column;

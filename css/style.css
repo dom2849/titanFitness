@@ -292,44 +292,40 @@ a{
 .group-fitness{
     background: var(--light-grey);
     text-align: center;
+    padding-top: 4rem;
 }
 .group-fitness__course-image{
-    width: 100%;
+    width: 100%;   
+    transition: .8s;
 }
-.group-fitness__course-name{
-    text-transform: capitalize; 
+
+@media(any-hover: hover){
+    .group-fitness__course-image:hover{
+        opacity: .80;
+        transform: scale(1.025);
+    }
 }
 
 .group-fitness__courses{
     --number-of-columns: repeat(3, 1fr);
 }
 
+@media(max-width: 1000px){
+    .group-fitness__courses{
+        --number-of-columns: repeat(2, 1fr);
+    }
+}
+
 .group-fitness__courses{
     display: grid;
     grid-template-columns: var(--number-of-columns);
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-
-/* Course-teaser and Courses
-.course-teaser{
-    text-align: center;
-    padding: 1.5rem;
+.group-fitness__course-name{
+    text-transform: capitalize; 
+    margin-top: .5rem;
 }
-
-
-.courses{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-}
-
-.course__image{
-    width: 100%;
-} */
-
-
-
 
 
 /* Footer */
@@ -342,7 +338,6 @@ a{
 .main-footer__contents{
     --main-footer-flex-direction: row;
 }
-
 
 .main-footer__contents{
     display: flex;
