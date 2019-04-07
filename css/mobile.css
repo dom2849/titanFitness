@@ -1,0 +1,14 @@
+.benefit__cards{
+     --number-of-columns: 1fr;
+}
+
+.memberships__cards{
+    --flex-direction: column;
+    --right-and-left-card-margin: 0rem;
+    --bottom-card-margin: 2rem;
+}
+
+.memberships__cards{
+    max-width: 450px;
+    margin: auto;
+}

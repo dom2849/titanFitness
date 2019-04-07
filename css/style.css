@@ -126,6 +126,7 @@ a{
 .hamburger-menu{
     display: var(--hamburger-menu-display);
     font-size: 1.6rem;
+    padding-right: 1rem;
     cursor: pointer;
 }
 
@@ -157,6 +158,12 @@ a{
     --number-of-columns: repeat(4, 1fr);
 }
 
+@media (max-width: 1000px ){
+    .benefit__cards{
+        --number-of-columns: repeat(2, 1fr);
+    }
+}
+
 .benefit__cards{
     display: grid;
     grid-template-columns: var(--number-of-columns);
@@ -186,16 +193,42 @@ a{
 }
 
 .memberships__cards{
+    --flex-direction: row;
+    --card-padding: 2rem 3rem;
+    --right-and-left-card-margin: 2rem;
+    --bottom-card-margin: 0rem;
+}
+
+.memberships__cards{
     display: flex;
     flex-direction: var(--flex-direction);
     justify-content: center;
 }
 
+@media(max-width: 1000px){
+    .memberships__cards {
+        --card-padding: 2rem 2rem;
+    }
+}
+
+@media(max-width: 900px){
+    .memberships__cards{
+        --card-padding: 2rem 1rem;
+    }
+}
+
 .memberships__cards > *{
-    margin: 0 2rem;
-    padding: 3rem;
+    padding: var(--card-padding);
+    margin-bottom: var(--bottom-card-margin);
     background: #fff;
     transition: background .5s;
+}
+
+.memberships__cards > *:first-child{
+    margin-right: var(--right-and-left-card-margin);
+}
+.memberships__cards > *:last-child{
+    margin-left: var(--right-and-left-card-margin);
 }
 
 @media(any-hover: hover){
@@ -203,7 +236,6 @@ a{
       background: #efefef;
     }
 }
-
 
 .membership__card-reacharge-rate{
     font-weight: normal;
