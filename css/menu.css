@@ -7,7 +7,11 @@
 }
 
 .main-navigation{
-    flex-direction: column;
+    --flex-direction: column;
+    --scale-size: scale(0);  /* Scaling of 0 to hide the menu */
+}
+
+.main-navigation{
     justify-content: center;
     align-items: center;
     background: rgba(46, 49, 49, .9);
@@ -16,7 +20,6 @@
     bottom: 0;
     right: 0;
     left: 0;
-    transform: scale(0);  /* Hides the menu */
 }
 
 .enable{
