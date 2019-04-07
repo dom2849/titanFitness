@@ -1,3 +1,9 @@
+.hero__header{
+    --font-size: 2.4rem; 
+    --margin-bottom: 1.5rem;
+    --margin-top: -2rem;
+}
+
 .benefit__cards{
      --number-of-columns: 1fr;
 }
@@ -11,4 +17,12 @@
 .memberships__cards{
     max-width: 450px;
     margin: auto;
+}
+
+.main-footer__contents{
+    --flex-direction: column;
+}
+
+.main-footer__text{
+    margin-bottom: .5rem;
 }
