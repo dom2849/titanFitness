@@ -2,6 +2,7 @@
     --light-green: #49c35d;
     --dark-green: #338841;
     --dark-grey: #333;
+    --light-grey: #f7f7f7;
     --section-header-font-size: 2rem;
     --section-header-margin-bottom: 2rem;
     --section-padding: 2rem 
@@ -197,7 +198,7 @@ a{
 
 .memberships{
     text-align: center;
-    background: #f7f7f7;
+    background: var(--light-grey);
 }
 
 .memberships__heading{
@@ -274,11 +275,11 @@ a{
     margin-bottom: 1.3rem;
 }
 
-/* _______________________CLASSES____________________ */
+/* _______________________CLASSES PAGE____________________ */
 
 .hero--classes{
     background: linear-gradient(to right, rgba(40, 49, 66, .80), rgba(40, 49, 66, .80)),
-    url('../images/classes/aerobics.jpeg') center center/cover; 
+    url('../images/heroes/aerobics.jpeg') center center/cover; 
     height: 55vh;
 }
 
@@ -286,7 +287,46 @@ a{
     height: 40vh;
 }
 
+/* Group-fitness */
 
+.group-fitness{
+    background: var(--light-grey);
+    text-align: center;
+}
+.group-fitness__course-image{
+    width: 100%;
+}
+.group-fitness__course-name{
+    text-transform: capitalize; 
+}
+
+.group-fitness__courses{
+    --number-of-columns: repeat(3, 1fr);
+}
+
+.group-fitness__courses{
+    display: grid;
+    grid-template-columns: var(--number-of-columns);
+    gap: 1.5rem;
+}
+
+
+/* Course-teaser and Courses
+.course-teaser{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.course__image{
+    width: 100%;
+} */
 
 
 
@@ -311,37 +351,4 @@ a{
     text-align: center;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Course-teaser and Courses
-.course-teaser{
-    text-align: center;
-    padding: 1.5rem;
-}
-.course-teaser a{
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-.courses{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-}
-
-.course__image{
-    width: 100%;
-} */
-
 
