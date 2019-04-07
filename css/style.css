@@ -10,7 +10,7 @@
 body{
     margin: 0;
     font-size: 1.2rem;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4{
@@ -51,7 +51,11 @@ a{
     }
 }
 
-.capitalize{
+.current{
+    color: var(--light-green);
+}
+
+.uppercase{
     text-transform: uppercase;
 }
 
@@ -66,8 +70,8 @@ a{
 
 .hero{
     box-sizing: border-box;
-    height: 80vh;
     padding: 1rem 0;
+    color: #fff;  
 }
 
 .vertical-list,
@@ -103,12 +107,11 @@ a{
     text-transform: uppercase
 }
 
-/* HOME PAGE */
-
 /* Header */
 .hero--home{
     background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
     url('../images/heroes/home.jpeg') center center/cover;
+    height: 80vh;
     color: #fff;
 }
 
@@ -150,6 +153,8 @@ a{
     justify-content: center;
 }
 
+/*_________________________HOME PAGE____________________________*/
+
 /* Benefits */
 
 .benefits{
@@ -188,7 +193,8 @@ a{
     margin-bottom: 1rem;
 }
 
-/* MEMBERSHIPS */   
+/* Memberships */ 
+
 .memberships{
     text-align: center;
     background: #f7f7f7;
@@ -252,6 +258,7 @@ a{
 .membership__card-price{
     color: var(--dark-green);
 }
+
 .membership__card-reacharge-rate,
 .membership__card-price{
     margin-bottom: .8rem;
@@ -267,8 +274,25 @@ a{
     margin-bottom: 1.3rem;
 }
 
+/* _______________________CLASSES____________________ */
 
-/* MAIN FOOTER */
+.hero--classes{
+    background: linear-gradient(to right, rgba(40, 49, 66, .80), rgba(40, 49, 66, .80)),
+    url('../images/classes/aerobics.jpeg') center center/cover; 
+    height: 55vh;
+}
+
+.hero__classes-content{
+    height: 40vh;
+}
+
+
+
+
+
+
+
+/* Footer */
 
 .main-footer{
     background: #333;
@@ -287,6 +311,7 @@ a{
     text-align: center;
     align-items: center;
 }
+
 
 
 
