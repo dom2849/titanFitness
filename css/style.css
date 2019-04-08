@@ -304,8 +304,7 @@ a{
 
 @media(any-hover: hover){
     .group-fitness__course-image:hover{
-        opacity: .80;
-        transform: scale(1.025);
+        transform: scale(1.04);
     }
 }
 
