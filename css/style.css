@@ -289,11 +289,14 @@ a{
 
 /* Group-fitness */
 
+.trainer-info,
 .group-fitness{
     background: var(--light-grey);
     text-align: center;
     padding-top: 4rem;
 }
+
+.trainer-info__trainer-image,
 .group-fitness__course-image{
     width: 100%;   
     transition: .8s;
@@ -306,16 +309,19 @@ a{
     }
 }
 
+.trainer-info__trainers,
 .group-fitness__courses{
     --number-of-columns: repeat(3, 1fr);
 }
 
 @media(max-width: 1000px){
+    .trainer-info__trainers,
     .group-fitness__courses{
         --number-of-columns: repeat(2, 1fr);
     }
 }
 
+.trainer-info__trainers,
 .group-fitness__courses{
     display: grid;
     grid-template-columns: var(--number-of-columns);
@@ -326,6 +332,54 @@ a{
     text-transform: capitalize; 
     margin-top: .5rem;
 }
+
+
+/* ____________________TRAINERS PAGE_______________ */
+
+/* Trainers */
+.trainer-info{
+    padding-bottom: 4rem;
+}
+.trainer-info__trainers > *{
+    background: #2a2a2a;
+    position: relative;
+}
+
+.trainer-info__trainer-image{
+    display: block;
+}
+
+.trainer-info__trainer-description{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: .8s;
+}
+
+.trainer-info__trainer-social-media{
+    justify-content: center;
+}
+
+@media(any-hover: hover){
+    .trainer-info__trainers > *:hover .trainer-info__trainer-image{
+        opacity: .4
+    }
+
+    .trainer-info__trainers > *:hover .trainer-info__trainer-description{
+        opacity: 1;
+    }
+
+}
+
+.trainer-info__trainer-name{
+    white-space: nowrap;
+    text-transform: capitalize;
+    margin-bottom: .2rem;
+}
+
 
 
 /* Footer */

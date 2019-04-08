@@ -23,12 +23,14 @@
 
 
 
-/* CLASSES PAGE */
+.trainer-info__trainers,
 .group-fitness__courses{
     --number-of-columns: 1fr;
 }
 
 
+
+ /* Footer */
 .main-footer__contents{
     --flex-direction: column;
 }

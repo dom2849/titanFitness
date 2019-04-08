@@ -23,7 +23,7 @@
 }
 
 .enable{
-    animation: grow 1s forwards;
+    animation: grow .5s forwards;
 }
 
 
@@ -38,7 +38,7 @@
                             This is needed because when the enable class is removed, the 
                             main navigation menu will dissappear without any animation */
                             
-    animation: shrink .8s forwards;
+    animation: shrink .5s forwards;
 }
 
 @keyframes shrink{
