@@ -27,6 +27,7 @@ a{
     display: inline-block;
     padding: .5rem 1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .button--light-green{
@@ -147,6 +148,16 @@ a{
     font-size: var(--section-header-font-size);
     margin-bottom: var(--section-header-margin-bottom);
     text-transform: uppercase
+}
+
+.site-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    flex: 1;
 }
 
 /* Header */
@@ -382,6 +393,71 @@ a{
     white-space: nowrap;
     text-transform: capitalize;
     margin-bottom: .2rem;
+}
+
+
+/* _______________JOIN NOW PAGE__________________ */
+.contact{
+    background: var(--light-grey);
+    color: var(--dark-grey);
+}
+
+.contact__items{
+    display: flex;
+}
+
+.contact__form{
+    flex: 1;
+}
+
+.contact__map{
+    --flex: 1;
+}
+
+.contact__map{
+    flex: var(--flex);
+}
+
+.contact__form-header{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.contact__form-label,
+.contact__form-text-input{
+    display: block;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.contact__form-label{
+    font-size: 1.5rem;
+}
+
+.contact__form-button,
+.contact__form-text-input{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.contact__form-text-area{
+    height: 12rem;
+    resize: none;
+}
+
+.contact__form-button{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.contact__form-button:hover{
+    transform: scale(1);
 }
 
 
