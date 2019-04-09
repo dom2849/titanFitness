@@ -69,11 +69,52 @@ a{
     color: var(--light-green);
 }
 
+/* Hero */
 .hero{
     box-sizing: border-box;
     padding: 1rem 0;
     color: #fff;  
 }
+
+.hero__header{
+    --font-size: 3.1rem; 
+    --margin-top: 0rem;
+    --margin-bottom: 1rem;
+}
+
+.hero__header{
+    margin-top: var(--margin-top);
+    margin-bottom:  var(--margin-bottom);
+    text-align: center;
+    font-size: var(--font-size);
+}
+
+.hero__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero--secondary{
+    background: linear-gradient(to right, rgba(40, 49, 66, .80), rgba(40, 49, 66, .80)),
+    url('../images/heroes/aerobics.jpeg') center center/cover; 
+    height: 55vh;
+}
+
+.hero__content--secondary{
+    height: 40vh;
+}
+/* End hero */
+
+
 
 .vertical-list,
 .horizontal-list,
@@ -116,12 +157,6 @@ a{
     color: #fff;
 }
 
-.hero__navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hamburger-menu{
     --hamburger-menu-display: none;
 }
@@ -131,27 +166,6 @@ a{
     font-size: 1.6rem;
     padding-right: 1rem;
     cursor: pointer;
-}
-
-.hero__header{
-    --font-size: 3.1rem; 
-    --margin-top: 0rem;
-    --margin-bottom: 1rem;
-}
-
-.hero__header{
-    margin-top: var(--margin-top);
-    margin-bottom:  var(--margin-bottom);
-    text-align: center;
-    font-size: var(--font-size);
-}
-
-.hero__content{
-    display: flex;
-    flex-direction: column;
-    height: 55vh;
-    align-items: center;
-    justify-content: center;
 }
 
 /*_________________________HOME PAGE____________________________*/
@@ -277,16 +291,6 @@ a{
 
 /* _______________________CLASSES PAGE____________________ */
 
-.hero--classes{
-    background: linear-gradient(to right, rgba(40, 49, 66, .80), rgba(40, 49, 66, .80)),
-    url('../images/heroes/aerobics.jpeg') center center/cover; 
-    height: 55vh;
-}
-
-.hero__classes-content{
-    height: 40vh;
-}
-
 /* Group-fitness */
 
 .trainer-info,
@@ -339,6 +343,7 @@ a{
 .trainer-info{
     padding-bottom: 4rem;
 }
+
 .trainer-info__trainers > *{
     background: #2a2a2a;
     position: relative;
