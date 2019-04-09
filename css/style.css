@@ -428,7 +428,7 @@ a{
 .contact__form-label,
 .contact__form-text-input{
     display: block;
-    width: 80%;
+    width: 90%;
     margin-bottom: 1rem;
 }
 
@@ -450,6 +450,24 @@ a{
     height: 12rem;
     resize: none;
 }
+
+.contact__form-text-area,
+.contact__form-text-input{
+    border: 1px solid #e1e2ec;
+}
+
+@media(any-hover: hover){
+    .contact__form-text-area:hover,
+    .contact__form-text-input:hover{
+        border-color: #b4b4bc;
+    }
+}
+
+.contact__form-text-area:focus,
+.contact__form-text-input:focus{
+    border-color: var(--light-green);
+}
+
 
 .contact__form-button{
     font-size: 1.5rem;
