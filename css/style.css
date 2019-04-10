@@ -112,6 +112,7 @@ a{
     height: 55vh;
     align-items: center;
     justify-content: center;
+    padding: 0 1.5rem;
 }
 
 .hero--secondary{
@@ -168,10 +169,14 @@ a{
     flex: 1;
 }
 
+.hero--home{
+    --background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
+    url('../images/heroes/home.jpeg') center center/cover;
+}
+
 /* Header */
 .hero--home{
-    background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),
-    url('../images/heroes/home.jpeg') center center/cover;
+    background: var(--background);
     height: 80vh;
     color: #fff;
 }
