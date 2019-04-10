@@ -248,6 +248,7 @@ a{
     --card-padding: 2rem 3rem;
     --right-and-left-card-margin: 4rem;
     --bottom-card-margin: 0rem;
+    --last-child-margin: 0rem;
 }
 
 .memberships__cards{
@@ -282,6 +283,7 @@ a{
 }
 .memberships__cards > *:last-child{
     margin-left: var(--right-and-left-card-margin);
+    margin-bottom: var(--last-child-margin);
 }
 
 @media(any-hover: hover){

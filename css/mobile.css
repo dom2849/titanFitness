@@ -19,6 +19,7 @@
     --flex-direction: column;
     --right-and-left-card-margin: 0rem;
     --bottom-card-margin: 3rem;
+    --last-child-margin: 1rem;
 }
 
 .memberships__cards{
