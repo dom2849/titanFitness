@@ -125,8 +125,6 @@ a{
 }
 /* End hero */
 
-
-
 .vertical-list,
 .horizontal-list,
 .main-navigation{
@@ -410,23 +408,44 @@ a{
 .contact{
     background: var(--light-grey);
     color: var(--dark-grey);
+    padding: 4rem 2rem;
+}
+
+.contact__items{
+    --flex-direction: row;
+}
+
+@media (max-width: 1000px){
+    .contact__items{
+        --flex-direction: column;
+    }
+
+    .contact__map{
+        height: 500px;
+        margin-top: 2.5rem;
+        width: 87%;
+        margin-bottom: 2rem;
+    }
 }
 
 .contact__items{
     display: flex;
+    flex-direction: var(--flex-direction);
 }
 
-.contact__form{
+.contact__form,
+.contact__map{
     flex: 1;
 }
 
 .contact__map{
-    --flex: 1;
+    --display: block;
 }
 
 .contact__map{
-    flex: var(--flex);
+    display: var(--display);
 }
+
 
 .contact__form-header{
     font-size: 1.8rem;
@@ -482,10 +501,28 @@ a{
 .contact__form-button{
     font-size: 1.5rem;
     margin: 2rem 0 1rem 0;
+    padding-right: 6rem;
+    position: relative;
 }
 
 .contact__form-button:hover{
     transform: scale(1);
+}
+
+.contact__form-button::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2rem;
+    content: "\f061";
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.contact__form-button:hover::after{
+    left: 82%;   
 }
 
 

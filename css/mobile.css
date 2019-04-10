@@ -28,6 +28,9 @@
     --number-of-columns: 1fr;
 }
 
+.contact__map{
+    --display: none;
+}
 
 
  /* Footer */
