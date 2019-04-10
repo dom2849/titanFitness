@@ -1,13 +1,11 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const mainNavigationMenu = document.querySelector('.main-navigation');
-const submitButton = document.querySelector('.contact__form-button');
 
 loadEventListeners();
 
 function loadEventListeners(){
     hamburgerMenu.addEventListener('click', showOrHideHamburgerMenu);
     window.addEventListener("resize", cleanUpMainNavigationClassList);
-    submitButton.addEventListener("click", reloadPage);
 }
 
 function showOrHideHamburgerMenu() {
@@ -31,6 +29,3 @@ function cleanUpMainNavigationClassList() {
     }
 }
 
-function reloadPage(){
-    window.location.reload();
-}
